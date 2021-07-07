@@ -1,0 +1,1 @@
+https://github.com/RainerKuemmerle/g2o 를 submodule로 받아서 사용하도록!
