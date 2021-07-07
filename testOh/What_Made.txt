@@ -1,0 +1,30 @@
+01. exercise1
+	- 간단한 g2o의 사용 모델
+	- vertex와 edge data를 직접 optimizer에 넣어 봄
+	- 직접 생성한 아주 작은 데이터의 최적화
+	
+02. exercise2
+	- 실제 데이터를 g2o를 사용하여 최적화 시킴
+	- manhattanOlson3500, big noise sphere의 data에 적용
+
+03. exercise3
+	- exercise2에서 작성한 대부분의 기능을 함수 및 클래스화
+	- using_g2o라는 이름의 library로 묶어냄
+	- linear solver, block solver, non-linear solver 등을 적용한 optimizer를 만들고 활용하는 클래스
+
+04. exercise4
+	- exercise3에서 작성한 library를 외부 library로 묶어냄
+	- 해당 과정에서 cmake link를 조정
+
+05. exercise5
+	- exercise3의 결과물 library cmake file에 대한 조정
+	- main의 CMakeLists.txt에 using_g2o library관련된 세팅만 됨
+	- using_g2o의 CMakeLists.txt가 g2o library를 탐색, 활용
+	- 전 후 변화를 주석처리로 남김(변화를 확인하기 위해)
+
+06. exercise6 (진행중)
+	- exercise4와 exercise5의 결합
+	- using_g2o library를 Extra Library로 꺼내야 함
+	- CMakeLists.txt의 상당히 많은 부분을 지웠는데 작동함. 원인불명. 지우기 전 파일을 별도로 저장함
+	- 더 많은 dataset에 대해 g2o를 적용해 봄(input/output repository 분리)
+
